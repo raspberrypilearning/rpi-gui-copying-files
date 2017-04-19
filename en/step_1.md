@@ -50,5 +50,5 @@ There are two ways to copy files on the Raspberry Pi. The first uses the GUI, an
    cp -r source-directory destination-directory
    ~~~
    
-   `[copy-directory-cli](images/copy-directory-cli.gif)
+   [copy-directory-cli](images/copy-directory-cli.gif)
    
