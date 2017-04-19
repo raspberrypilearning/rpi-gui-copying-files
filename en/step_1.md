@@ -1,76 +1,54 @@
-# New project
+# Copying files and directories on a Raspberry Pi
 
-Each project contains a set of directories for each language, you're set up now with an `en` directory that contains the necessary files to get you going.
+There are two ways to copy files on the Raspberry Pi. The first uses the GUI, and the second uses the Terminal.
 
-* [meta.yml](#metayml)
-* [Steps - step_1.md, step_2.md, etc](#steps)
+*[GUI]: Graphical User Interface
 
+*[Terminal]: A Command Line interface
 
-## meta.yml
+## Method 1 - Using the GUI
 
-The `meta.yml` file sets lots of basic information for the project.
+![copy-file-gui](images/copy-file-gui.gif)
 
-``` yml
-title: The title of the project
-hero_image: images/banner.png # The image used on the listing view
-subtitle: Project subtitle # Used on the listing view
-description: Project description # Used on the listing view
-published: false # A boolean - `true` or`false` - that controls whether the project will appear on the listing view
-steps: # A list of all the steps
-  - title: How to get started # Used as the sidebar title for the step
-    duration: 60 # Not used yet
-```
+1. Open a File Manager window by clicking on the icon in the top left corner of the screen
 
-## Steps
+   ![file-manager](images/file-manager.png)
 
-* [Links](#links)
-* [Resources](#resources)
-* [Images](#images)
-* [Definitions](#definitions)
-* [Hints](#hints)
+1. Navigate to the file or directory you want to copy and right click on it, selecting *Copy* from the context menu.
+1. Navigate to the directory you wish to copy the files or directories into.
+1. Right click in the directory and select *Paste* from the context menu.
+1. You can also use a *lasso* selection to select multiple files and directories.
 
-Project steps are written in the [Kramdown](https://kramdown.gettalong.org/) variety of markdown. There is a [quick reference guide](https://kramdown.gettalong.org/quickref.html) and [full syntax documentation](https://kramdown.gettalong.org/syntax.html).
-
-### Links, resources & images
-
-See [kramdown documentation](https://kramdown.gettalong.org/quickref.html#links-and-images) for more details.
-
-#### Links
-
-A [link](http://kramdown.gettalong.org) to the kramdown homepage.
-
-#### Resources
-
-A [link to a file in the resources directory](resources/worksheet.pdf){:download='filename.pdf'}. The download part will make the file automatically download rather than be rendered in the browser, the filename you'd like the file to be saved with is the second bit after the `=`. The `/slash learning` application will ensure the resource is available.
-
-#### Images
-
-![Banner image](images/banner.png) - the link text becomes the alternative text for the image. The `/slash learning` application will ensure the image is available.
-
-### Definitions
-
-Definitions can be written using HTML abbreviations, which are a standard part of [kramdown](https://kramdown.gettalong.org/quickref.html#abbreviations)
-
-```
-To do this you might require a variable or a two word definition.
-
-*[variable]: An object that has a name and stores a value.
-
-*[two word]: Definitions are markdown, and can have [links](http://kramdown.gettalong.org) etc
-```
+   ![copy-files-gui](images/copy-files-gui.gif)
 
 
-### Hints
+## Method 2 - Using the Terminal
 
-Still very much a work in progress, but here's how you could get one to work currently. The id `#hint-1` on the heading and the class `.hint-1` on the body must match up.
+![copy-file-cli](images/copy-file-cli.gif)
 
-```
-### Hint
-{: .hint-heading #hint-1 }
+1. Open a new Terminal window by clicking on the icon in the top left corner of the screen.
 
-Here's a hint of how to do this project. Just a change to force an update.
-{: .hint-content .hint-1 }
+   ![terminal](images/terminal.png)
 
-And a little more text for the first hint.
-{: .hint-content .hint-1 }
-```
+1. You can use the `cp` command to copy files. The syntax is as follows:
+
+   ~~~bash
+   cp source-directory/file-to-copy.txt destination-directory/.
+   ~~~
+
+1. If you want to copy multiple files, then you can use a *wildcard* character `*`.
+
+   ~~~bash
+   cp source-directory/* destination-directory/.
+   ~~~
+
+   ![copy-files-cli](images/copy-files-cli.gif)
+
+1. If you wish to copy a directory that has files inside it, you need to do a *recursive* copy. This can be done by placing the `-r` flag after the `cp` command
+
+   ~~~bash
+   cp -r source-directory destination-directory
+   ~~~
+   
+   `[copy-directory-cli](images/copy-directory-cli.gif)
+   
