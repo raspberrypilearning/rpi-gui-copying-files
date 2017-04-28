@@ -1,4 +1,4 @@
-# Copying files and directories on a Raspberry Pi
+### Copying files and directories on a Raspberry Pi
 
 There are two ways to copy files on the Raspberry Pi. The first uses the GUI, and the second uses the Terminal.
 
@@ -6,7 +6,7 @@ There are two ways to copy files on the Raspberry Pi. The first uses the GUI, an
 
 *[Terminal]: A Command Line interface
 
-## Method 1 - Using the GUI
+#### Method 1 - Using the GUI
 
 ![copy-file-gui](images/copy-file-gui.gif)
 
@@ -22,7 +22,7 @@ There are two ways to copy files on the Raspberry Pi. The first uses the GUI, an
    ![copy-files-gui](images/copy-files-gui.gif)
 
 
-## Method 2 - Using the Terminal
+#### Method 2 - Using the Terminal
 
 ![copy-file-cli](images/copy-file-cli.gif)
 
