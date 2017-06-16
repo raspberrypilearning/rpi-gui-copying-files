@@ -8,6 +8,8 @@ There are two ways to copy files on the Raspberry Pi. The first uses the GUI, an
 
 #### Method 1 - Using the GUI
 
+![copy-file-gui](images/copy-file-gui.gif)
+
 1. Open a File Manager window by clicking on the icon in the top left corner of the screen
 
    ![file-manager](images/file-manager.png)
