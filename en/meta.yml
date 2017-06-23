@@ -1,9 +1,12 @@
 title: Copying Files on a Raspberry Pi
 hero_image: images/banner.png
-subtitle: rpi-copying-files subtitle
-description: rpi-copying-files description
-original_url: https://codeclubprojects.org/en-GB/scratch/rock-band
+description: How to copy files in Raspbian
+original_url: 
 theme: cc-prototype
-published: false
+duration: 1 
+listed: false
+ingredient: true
+interests: ""
+technologies: ""
 steps:
   - title: Copying Files on a Raspberry Pi
