@@ -8,9 +8,9 @@ There are two ways to copy files on the Raspberry Pi. The first uses the GUI, an
 
    ![file-manager](images/file-manager.png)
 
-- Navigate to the file or directory you want to copy and right click on it, selecting *Copy* from the context menu.
+- Navigate to the file or directory you want to copy and right-click on it, selecting *Copy* from the context menu.
 - Navigate to the directory you wish to copy the files or directories into.
-- Right click in the directory and select *Paste* from the context menu.
+- Right-click in the directory and select *Paste* from the context menu.
 - You can also use a *lasso* selection to select multiple files and directories.
 
    ![copy-files-gui](images/copy-files-gui.gif)
@@ -24,13 +24,13 @@ There are two ways to copy files on the Raspberry Pi. The first uses the GUI, an
 
    ![terminal](images/terminal.png)
 
-- You can use the `cp` command to copy files. The syntax is as follows:
+- Use the `cp` command to copy files. The syntax is as follows:
 
    ~~~bash
    cp source-directory/file-to-copy.txt destination-directory/.
    ~~~
 
-- If you want to copy multiple files, then you can use a *wildcard* character `*`.
+- If you want to copy multiple files, then you can use the *wildcard* character `*`.
 
    ~~~bash
    cp source-directory/* destination-directory/.
@@ -38,7 +38,7 @@ There are two ways to copy files on the Raspberry Pi. The first uses the GUI, an
 
    ![copy-files-cli](images/copy-files-cli.gif)
 
-- If you wish to copy a directory that has files inside it, you need to do a *recursive* copy. This can be done by placing the `-r` flag after the `cp` command
+- To copy a directory that contains files, you need to do a *recursive* copy. This can be done by placing the `-r` flag after the `cp` command
 
    ~~~bash
    cp -r source-directory destination-directory
