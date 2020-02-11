@@ -1,47 +1,47 @@
-There are two ways to copy files on the Raspberry Pi. The first uses the GUI, and the second uses the Terminal.
+Υπάρχουν δύο τρόποι για την αντιγραφή αρχείων στο Raspberry Pi. Ο πρώτος χρησιμοποιεί το γραφικό περιβάλλον και ο δεύτερος χρησιμοποιεί το τερματικό.
 
-### Method 1 - Using the GUI
+### Μέθοδος 1 - Χρήση του γραφικού περιβάλλοντος επικοινωνίας - GUI
 
-![copy-file-gui](images/copy-file-gui.gif)
+![αντιγραφή-αρχείο-gui](images/copy-file-gui.gif)
 
-- Open a File Manager window by clicking on the icon in the top left corner of the screen
+- Άνοιξε ένα παράθυρο του διαχειριστή αρχείων κάνοντας κλικ στο εικονίδιο στην επάνω αριστερή γωνία της οθόνης
 
-   ![file-manager](images/file-manager.png)
+   ![διαχειριστής-αρχείων](images/file-manager.png)
 
-- Navigate to the file or directory you want to copy and right-click on it, selecting *Copy* from the context menu.
-- Navigate to the directory you wish to copy the files or directories into.
-- Right-click in the directory and select *Paste* from the context menu.
-- You can also use a *lasso* selection to select multiple files and directories.
+- Πήγαινε στο αρχείο ή τον κατάλογο που θέλεις να αντιγράψεις και κάνε δεξί κλικ σε αυτό, επιλέγοντας * Αντιγραφή * από το αναδυόμενο μενού.
+- Πήγαινε στον κατάλογο στον οποίο θέλεις να αντιγράψεις τα αρχεία ή τους καταλόγους.
+- Κάνε δεξί κλικ στον κατάλογο και επίλεξε * Επικόλληση * από το αναδυόμενο μενού.
+- Μπορείς επίσης να χρησιμοποιήσεις μιά επιλογή τύπου * lasso * για να επιλέξεις πολλά αρχεία και καταλόγους.
 
-   ![copy-files-gui](images/copy-files-gui.gif)
+   ![αντιγραφή-αρχείων-gui](images/copy-files-gui.gif)
 
 
-### Method 2 - Using the Terminal
+### Μέθοδος 2 - Χρήση του τερματικού
 
-![copy-file-cli](images/copy-file-cli.gif)
+![αντιγραφή-αρχείο-cli](images/copy-file-cli.gif)
 
-- Open a new Terminal window by clicking on the icon in the top left corner of the screen.
+- Άνοιξε ένα νέο παράθυρο τερματικού   κάνοντας κλικ στο εικονίδιο στην επάνω αριστερή γωνία της οθόνης.
 
-   ![terminal](images/terminal.png)
+   ![τερματικό](images/terminal.png)
 
-- Use the `cp` command to copy files. The syntax is as follows:
-
-   ~~~bash
-   cp source-directory/file-to-copy.txt destination-directory/.
-   ~~~
-
-- If you want to copy multiple files, then you can use the *wildcard* character `*`.
+- Χρησιμοποιήστε την εντολή `cp` για να αντιγράψεις αρχεία. Η σύνταξη είναι η εξής:
 
    ~~~bash
-   cp source-directory/* destination-directory/.
+   cp αρχικός-κατάλογος/κατάλογος-αρχείο-για-αντιγραφή.txt.
    ~~~
 
-   ![copy-files-cli](images/copy-files-cli.gif)
-
-- To copy a directory that contains files, you need to do a *recursive* copy. This can be done by placing the `-r` flag after the `cp` command
+- Εάν θέλεις να αντιγράψεις πολλά αρχεία, τότε μπορείς να χρησιμοποιήσεις το χαρακτήρα *μπαλαντέρ* ` * `.
 
    ~~~bash
-   cp -r source-directory destination-directory
+   cp αρχικός-κατάλογος/* κατάλογος-προορισμού/.
    ~~~
 
-   ![copy-directory-cli](images/copy-directory-cli.gif)
+   ![αντιγραφή-αρχεία-cli](images/copy-files-cli.gif)
+
+- Για να αντιγράψεις έναν κατάλογο που περιέχει αρχεία, πρέπει να κάνεις ένα * αναδρομικό * αντίγραφο. Αυτό μπορεί να γίνει τοποθετώντας τη σημαία ` -r ` μετά την εντολή ` cp `
+
+   ~~~bash
+   cp-r αρχικός-κατάλόγος κατάλόγος-προορισμού
+   ~~~
+
+   ![αντιγραφή-κατάλογος-cli](images/copy-directory-cli.gif)
