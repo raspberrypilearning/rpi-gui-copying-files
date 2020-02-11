@@ -1,9 +1,9 @@
 ---
-title: Copying Files on a Raspberry Pi
+title: Αντιγραφή αρχείων στο Raspberry Pi
 hero_image: images/banner.png
-description: Two ways to copy files in Raspbian
+description: Δύο τρόποι για την αντιγραφή αρχείων στο Raspbian
 original_url:
-theme: cc-prototype
+theme: cc-πρωτότυπο
 duration: 1
 listed: false
 ingredient: true
@@ -12,4 +12,4 @@ interests: ""
 technologies: ""
 steps:
   - 
-    title: Copying Files on a Raspberry Pi
+    title: Αντιγραφή αρχείων στο Raspberry Pi
